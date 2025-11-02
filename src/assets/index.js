@@ -7,15 +7,15 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import python from "./tech/Python.jpg";            // Replacing older tech like JS, Node
+import python from "./tech/python.jpg";            // Replacing older tech like JS, Node
 import django from "./tech/django_logo.jpg";            // Replacing ReactJS, etc.
-import sql from "./tech/SQL.jpg"             // Replacing Redux
+import sql from "./tech/sql.jpg"             // Replacing Redux
 import tensorflow from "./tech/tensorflow.jpg";    // Replacing NodeJS, React
-import scikitlearn from "./tech/SKlearn.jpg";  // Replacing Tailwind
+import sklearn from "./tech/sklearn.jpg";  // Replacing Tailwind
 import pandas from "./tech/Pandas.jpg";            // Replacing MongoDB
 import numpy from "./tech/Numpy.jpg";              // Replacing typescript
  
-import datascientist from "./tech/Data scientist.jpg";
+import datascientist from "./tech/data-scientist.jpg";
 import machinelearning from "./tech/ML.jpg";
 
 import aipoweredblog from "./aipoweredblog.jpeg";
@@ -40,7 +40,7 @@ export {
   python,
   django,
   tensorflow,
-  scikitlearn,
+  sklearn,
   pandas,
   numpy,
   sql,
