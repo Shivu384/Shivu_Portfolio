@@ -7,7 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import python from "./tech/python.jpg";            // Replacing older tech like JS, Node
+import python from "./tech/Python.jpg";            // Replacing older tech like JS, Node
 import django from "./tech/django_logo.jpg";            // Replacing ReactJS, etc.
 import sql from "./tech/SQL.jpg"             // Replacing Redux
 import tensorflow from "./tech/tensorflow.jpg";    // Replacing NodeJS, React
