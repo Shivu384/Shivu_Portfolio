@@ -2,7 +2,7 @@ import {
   python,
   django,
   tensorflow,
-  scikitlearn,
+  sklearn,
   pandas,
   numpy,
   sql,
