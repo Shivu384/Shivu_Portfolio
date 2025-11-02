@@ -90,7 +90,7 @@ const technologies = [
   },
   {
     name: "Scikit-learn",
-    icon: scikitlearn,
+    icon: sklearn,
   },
   {
     name: "Pandas",
