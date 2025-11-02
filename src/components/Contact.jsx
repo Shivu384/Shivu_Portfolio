@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { contactInfo } from "../constants";
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,9 +38,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: contactInfo.name,
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: contactInfo.email,
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -66,22 +67,68 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden mb-10`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Get in Touch</p>
+        <h3 className={styles.sectionHeadText}>Contact Me</h3>
+
+        <div className='mt-8 mb-6 flex flex-wrap gap-4'>
+          <div className='flex items-center gap-2 text-secondary'>
+            <span className='text-white font-medium'>📧</span>
+            <a href={`mailto:${contactInfo.email}`} className='hover:text-white transition-colors'>
+              {contactInfo.email}
+            </a>
+          </div>
+          <div className='flex items-center gap-2 text-secondary'>
+            <span className='text-white font-medium'>📱</span>
+            <a href={`tel:${contactInfo.phone}`} className='hover:text-white transition-colors'>
+              {contactInfo.phone}
+            </a>
+          </div>
+          <div className='flex items-center gap-2 text-secondary'>
+            <span className='text-white font-medium'>📍</span>
+            <span>{contactInfo.location}</span>
+          </div>
+        </div>
+
+        <div className='mb-6 flex gap-4'>
+          <a
+            href={contactInfo.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-[#915EFF] transition-colors'
+          >
+            <span className='text-white text-xl'>⚡</span>
+          </a>
+          <a
+            href={contactInfo.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-[#0077b5] transition-colors'
+          >
+            <span className='text-white text-xl'>💼</span>
+          </a>
+          <a
+            href={contactInfo.leetcode}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-[#ffa116] transition-colors'
+          >
+            <span className='text-white text-xl'>🔧</span>
+          </a>
+        </div>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-8 flex flex-col gap-6'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'>Your name</span>
             <input
               type='text'
               name='name'

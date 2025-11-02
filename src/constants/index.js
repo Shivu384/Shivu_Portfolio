@@ -1,29 +1,26 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
+  python,
+  django,
+  tensorflow,
+  scikitlearn,
+  pandas,
+  numpy,
+  sql,
+  matplotlib,
+  seaborn,
+  jupyter,
+  vscode,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  datascientist,
+  machinelearning,
+  verifund,
+  backend,
 } from "../assets";
+
+// Use existing icons as placeholders for missing tech
+const cogniwide = backend; // Placeholder for company
+const oasis = datascientist; // Placeholder for company
+const ecommerce = verifund; // Placeholder for project
 
 export const navLinks = [
   {
@@ -35,231 +32,221 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
 ];
 
+// Contact Information
+export const contactInfo = {
+  name: "Shivam Arora",
+  location: "Meerut Road, Ghaziabad, UP 201206",
+  phone: "+91-7302399912",
+  email: "shivamarora382004@gmail.com",
+  linkedin: "https://www.linkedin.com/in/shivam-arora-",
+  github: "https://github.com/Shivu384",
+  leetcode: "https://leetcode.com/u/Shivam_Arora/",
+};
+
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "AI Engineer",
+    icon: machinelearning,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Machine Learning Engineer",
+    icon: machinelearning,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Voice AI Specialist",
+    icon: machinelearning,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Django",
+    icon: django,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "SQL",
+    icon: sql,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Scikit-learn",
+    icon: scikitlearn,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Pandas",
+    icon: pandas,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "NumPy",
+    icon: numpy,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Seaborn",
+    icon: seaborn,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Matplotlib",
+    icon: matplotlib,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Jupyter",
+    icon: jupyter,
   },
   {
-    name: "git",
+    name: "VS Code",
+    icon: vscode,
+  },
+  {
+    name: "Git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Backend Developer",
+    company_name: "Cogniwide UK",
+    icon: cogniwide,
+    iconBg: "#1a1a2e",
+    date: "July 2025 - Present",
+    location: "Remote",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed voice agents using contemporary tools like ElevenLabs, Deepgram, and LLMs to improve conversational AI.",
+      "Implemented back-end CRUD operations and workflow automation using a workflow builder.",
+      "Managed and created RESTful APIs and utilized Docker for containerized application deployment.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Data Analyst",
+    company_name: "Oasis Infobyte",
+    icon: oasis,
+    iconBg: "#F0F0F0",
+    date: "August 2024",
+    location: "Remote",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducted Exploratory Data Analysis (EDA) and data preprocessing on large-scale retail sales datasets.",
+      "Developed and optimized machine learning models (using Scikit-learn, Python) for house price prediction.",
+      "Validated analytical results by benchmarking projects on Kaggle datasets.",
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Ecommerce Shopping Cart",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-featured web application with dynamic shopping cart, product catalog, and search functionality. Features secure user authentication with email verification, Paytm payment gateway integration, order tracking, and automated invoicing.",
     tags: [
       {
-        name: "react",
+        name: "django",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "sqlite",
         color: "pink-text-gradient",
       },
+      {
+        name: "paytm",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ecommerce,
+    source_code_link: "https://github.com/Shivu384",
   },
   {
-    name: "Job IT",
+    name: "Verifund (P2P Lending Platform)",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A peer-to-peer lending platform with secure loan processing, ML-powered credit risk model, OCR automation for document handling, and PAN card KYC validation via IDfy API for compliance and fraud detection.",
     tags: [
       {
-        name: "react",
+        name: "django",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "machinelearning",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "ocr",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "idfy",
+        color: "orange-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: verifund,
+    source_code_link: "https://github.com/Shivu384/VERIFUND_SPRINTHACKS",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const education = {
+  degree: "B.Tech Computer Science and Engineering",
+  institution: "KIET Group of Institutions, Ghaziabad",
+  duration: "2023 - Present",
+  cgpa: "8.5",
+};
+
+const certifications = [
+  {
+    name: "Programming with Python CS50",
+    issuer: "Harvard University",
+    icon: python,
+  },
+  {
+    name: "Getting Started with Machine Learning Algorithms",
+    issuer: "Simplilearn",
+    icon: machinelearning,
+  },
+  {
+    name: "Generative AI for Everyone",
+    issuer: "Coursera - DeepLearning.ai",
+    icon: tensorflow,
+  },
+];
+
+const extracurriculars = [
+  {
+    title: "Core Member",
+    organization: "Innogeeks (Technical Club)",
+    duration: "October 2023 - Present",
+    points: [
+      "Spearheaded high-impact technical events and workshops.",
+      "Mentored students in Machine Learning, fostering innovation and project leadership.",
+    ],
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  projects,
+  education,
+  certifications,
+  extracurriculars,
+};
