@@ -47,9 +47,9 @@ export const contactInfo = {
   location: "Meerut Road, Ghaziabad, UP 201206",
   phone: "+91-7302399912",
   email: "shivamarora382004@gmail.com",
-  linkedin: "https://www.linkedin.com/in/shivam-arora-",
+  linkedin: "https://www.linkedin.com/in/shivamarora384/",
   github: "https://github.com/Shivu384",
-  leetcode: "https://leetcode.com/u/Shivam_Arora/",
+  leetcode: "https://leetcode.com/u/Shivu384/",
 };
 
 const services = [
