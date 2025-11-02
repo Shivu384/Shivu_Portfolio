@@ -2,10 +2,11 @@
   command = "npm run build"
   publish = "dist"
 
+  [build.environment]
+    NODE_VERSION = "18"
+    SECRETS_SCAN_OMIT_KEYS = "VITE_APP_EMAILJS_PUBLIC_KEY,VITE_APP_EMAILJS_SERVICE_ID,VITE_APP_EMAILJS_TEMPLATE_ID"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[build.environment]
-  NODE_VERSION = "18"
