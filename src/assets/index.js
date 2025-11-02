@@ -11,7 +11,7 @@ import python from "./tech/Python.jpg";            // Replacing older tech like 
 import django from "./tech/django_logo.jpg";            // Replacing ReactJS, etc.
 import sql from "./tech/SQL.jpg"             // Replacing Redux
 import tensorflow from "./tech/tensorflow.jpg";    // Replacing NodeJS, React
-import sklearn from "./tech/SK learn.jpg";  // Replacing Tailwind
+import scikitlearn from "./tech/SKlearn.jpg";  // Replacing Tailwind
 import pandas from "./tech/Pandas.jpg";            // Replacing MongoDB
 import numpy from "./tech/Numpy.jpg";              // Replacing typescript
  
