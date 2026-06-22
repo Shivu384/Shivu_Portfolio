@@ -6,45 +6,17 @@ import {
   pandas,
   numpy,
   sql,
-  matplotlib,
-  seaborn,
-  jupyter,
-  vscode,
   git,
-  datascientist,
+  vscode,
   machinelearning,
   verifund,
   backend,
 } from "../assets";
 
-// Use existing icons as placeholders for missing tech
-const cogniwide = backend; // Placeholder for company
-const oasis = datascientist; // Placeholder for company
-const ecommerce = verifund; // Placeholder for project
-
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
-// Contact Information
+// ─── Contact Info ─────────────────────────────────────────────
 export const contactInfo = {
   name: "Shivam Arora",
-  location: "Meerut Road, Ghaziabad, UP 201206",
+  location: "Ghaziabad, Uttar Pradesh",
   phone: "+91-7302399912",
   email: "shivamarora382004@gmail.com",
   linkedin: "https://www.linkedin.com/in/shivamarora384/",
@@ -52,194 +24,182 @@ export const contactInfo = {
   leetcode: "https://leetcode.com/u/Shivu384/",
 };
 
+// ─── Nav Links ────────────────────────────────────────────────
+export const navLinks = [
+  { id: "about",   title: "About"   },
+  { id: "work",    title: "Work"    },
+  { id: "projects",title: "Projects"},
+  { id: "github",  title: "GitHub"  },
+  { id: "contact", title: "Contact" },
+];
+
+// ─── Services (About cards) ───────────────────────────────────
 const services = [
-  {
-    title: "AI Engineer",
-    icon: machinelearning,
-  },
-  {
-    title: "Machine Learning Engineer",
-    icon: machinelearning,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Voice AI Specialist",
-    icon: machinelearning,
-  },
+  { title: "Agentic AI Engineer",        icon: machinelearning },
+  { title: "GenAI / LLM Developer",      icon: machinelearning },
+  { title: "Backend Engineer",           icon: backend         },
+  { title: "Voice AI Specialist",        icon: machinelearning },
 ];
 
+// ─── Technologies (Skills) ────────────────────────────────────
+// Icons reuse existing assets; missing ones fall back to initials
 const technologies = [
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Django",
-    icon: django,
-  },
-  {
-    name: "SQL",
-    icon: sql,
-  },
-  {
-    name: "TensorFlow",
-    icon: tensorflow,
-  },
-  {
-    name: "Scikit-learn",
-    icon: sklearn,
-  },
-  {
-    name: "Pandas",
-    icon: pandas,
-  },
-  {
-    name: "NumPy",
-    icon: numpy,
-  },
-  {
-    name: "Seaborn",
-    icon: seaborn,
-  },
-  {
-    name: "Matplotlib",
-    icon: matplotlib,
-  },
-  {
-    name: "Jupyter",
-    icon: jupyter,
-  },
-  {
-    name: "VS Code",
-    icon: vscode,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
+  { name: "Python",       icon: python        },
+  { name: "FastAPI",      icon: backend       }, // placeholder → letter fallback
+  { name: "Django",       icon: django        },
+  { name: "SQL",          icon: sql           },
+  { name: "JavaScript",   icon: vscode        }, // placeholder
+  { name: "TensorFlow",   icon: tensorflow    },
+  { name: "Scikit-learn", icon: sklearn       },
+  { name: "Pandas",       icon: pandas        },
+  { name: "NumPy",        icon: numpy         },
+  { name: "Git",          icon: git           },
+  { name: "LLMs / RAG",   icon: machinelearning },
+  { name: "VS Code",      icon: vscode        },
 ];
 
+// ─── Experience ───────────────────────────────────────────────
 const experiences = [
   {
-    title: "Backend Developer",
-    company_name: "Cogniwide UK",
-    icon: cogniwide,
-    iconBg: "#1a1a2e",
-    date: "July 2025 - Present",
+    title: "Backend Developer Intern",
+    company_name: "Speedse Logistics Pvt. Ltd",
+    icon: backend,
+    iconBg: "#0d1a30",
+    date: "Feb 2026 – Present",
     location: "Remote",
     points: [
-      "Developed voice agents using contemporary tools like ElevenLabs, Deepgram, and LLMs to improve conversational AI.",
-      "Implemented back-end CRUD operations and workflow automation using a workflow builder.",
-      "Managed and created RESTful APIs and utilized Docker for containerized application deployment.",
+      "Built and maintained 50+ Django REST APIs for load management, bidding, tracking, and payments.",
+      "Optimized backend services using Redis and Docker, reducing API latency by ~25% and improving scalability.",
+      "Contributed to payment, tracking, and admin workflows, improving system reliability and operational efficiency.",
     ],
   },
   {
-    title: "Data Analyst",
-    company_name: "Oasis Infobyte",
-    icon: oasis,
-    iconBg: "#F0F0F0",
-    date: "August 2024",
+    title: "AI Engineer",
+    company_name: "Cogniwide UK",
+    icon: machinelearning,
+    iconBg: "#1a1040",
+    date: "Jul 2025 – Jan 2026",
     location: "Remote",
     points: [
-      "Conducted Exploratory Data Analysis (EDA) and data preprocessing on large-scale retail sales datasets.",
-      "Developed and optimized machine learning models (using Scikit-learn, Python) for house price prediction.",
-      "Validated analytical results by benchmarking projects on Kaggle datasets.",
+      "Built AI voice agents using LLMs, Deepgram, and ElevenLabs, improving automation efficiency by ~30%.",
+      "Developed scalable Django/FastAPI APIs with Redis and Docker, reducing latency by ~25%.",
+      "Integrated real-time speech pipelines, enabling seamless voice-driven enterprise workflows.",
     ],
   },
 ];
 
+// ─── Projects ─────────────────────────────────────────────────
 const projects = [
   {
-    name: "Ecommerce Shopping Cart",
+    name: "LLM Guardrails Gateway",
     description:
-      "A full-featured web application with dynamic shopping cart, product catalog, and search functionality. Features secure user authentication with email verification, Paytm payment gateway integration, order tracking, and automated invoicing.",
+      "Production-grade AI safety gateway with 5-layer guardrails: PII redaction, prompt-injection detection, toxicity filtering, topic moderation, and JSON schema validation. YAML-based policy engine reduces update effort by ~80% without code changes.",
     tags: [
-      {
-        name: "django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "sqlite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "paytm",
-        color: "orange-text-gradient",
-      },
+      { name: "FastAPI",      color: "green-text-gradient"  },
+      { name: "Presidio",     color: "blue-text-gradient"   },
+      { name: "GuardrailsAI", color: "pink-text-gradient"   },
+      { name: "Docker",       color: "orange-text-gradient" },
     ],
-    image: ecommerce,
+    image: backend,
     source_code_link: "https://github.com/Shivu384",
+    date: "December 2025",
+  },
+  {
+    name: "LLM Eval CI/CD Pipeline",
+    description:
+      "Automated evaluation pipeline assessing hallucination rate, faithfulness, relevancy, latency, and cost across 100+ versioned benchmark cases. GitHub Actions gates block merges when hallucination > 5% or p95 latency violates SLA.",
+    tags: [
+      { name: "RAG",            color: "blue-text-gradient"   },
+      { name: "GitHub Actions", color: "green-text-gradient"  },
+      { name: "Streamlit",      color: "pink-text-gradient"   },
+      { name: "DVC",            color: "orange-text-gradient" },
+    ],
+    image: verifund,
+    source_code_link: "https://github.com/Shivu384",
+    date: "March 2026",
   },
   {
     name: "Verifund (P2P Lending Platform)",
     description:
       "A peer-to-peer lending platform with secure loan processing, ML-powered credit risk model, OCR automation for document handling, and PAN card KYC validation via IDfy API for compliance and fraud detection.",
     tags: [
-      {
-        name: "django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machinelearning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ocr",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "idfy",
-        color: "orange-text-gradient",
-      },
+      { name: "django",        color: "blue-text-gradient"   },
+      { name: "machinelearning", color: "green-text-gradient" },
+      { name: "ocr",           color: "pink-text-gradient"   },
+      { name: "idfy",          color: "orange-text-gradient" },
     ],
     image: verifund,
     source_code_link: "https://github.com/Shivu384/VERIFUND_SPRINTHACKS",
   },
+  {
+    name: "Ecommerce Shopping Cart",
+    description:
+      "A full-featured web application with dynamic shopping cart, product catalog, and search functionality. Features secure user authentication with email verification, Paytm payment gateway integration, order tracking, and automated invoicing.",
+    tags: [
+      { name: "django",    color: "blue-text-gradient"   },
+      { name: "bootstrap", color: "green-text-gradient"  },
+      { name: "sqlite",    color: "pink-text-gradient"   },
+      { name: "paytm",     color: "orange-text-gradient" },
+    ],
+    image: backend,
+    source_code_link: "https://github.com/Shivu384",
+  },
 ];
 
+// ─── Education ────────────────────────────────────────────────
 const education = {
-  degree: "B.Tech Computer Science and Engineering",
+  degree: "B.Tech – Computer Science and Engineering",
   institution: "KIET Group of Institutions, Ghaziabad",
-  duration: "2023 - Present",
-  cgpa: "8.5",
+  duration: "2023 – Present",
+  cgpa: "8.2",
+  location: "Ghaziabad, Uttar Pradesh",
 };
 
+// ─── Certifications ───────────────────────────────────────────
 const certifications = [
   {
-    name: "Programming with Python CS50",
+    name: "CS50: Intro to Programming with Python",
     issuer: "Harvard University",
     icon: python,
   },
   {
-    name: "Getting Started with Machine Learning Algorithms",
-    issuer: "Simplilearn",
-    icon: machinelearning,
-  },
-  {
-    name: "Generative AI for Everyone",
-    issuer: "Coursera - DeepLearning.ai",
-    icon: tensorflow,
+    name: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    icon: backend,
   },
 ];
 
+// ─── Extracurriculars ─────────────────────────────────────────
 const extracurriculars = [
   {
     title: "Core Member",
-    organization: "Innogeeks (Technical Club)",
-    duration: "October 2023 - Present",
+    organization: "Innogeeks (Technical Club) – KIET",
+    duration: "October 2023 – Present",
     points: [
-      "Spearheaded high-impact technical events and workshops.",
-      "Mentored students in Machine Learning, fostering innovation and project leadership.",
+      "Mentoring juniors and co-organizing hackathons including NASA Space Apps and open-source events.",
+      "Leading technical workshops on AI/ML and backend development.",
+    ],
+  },
+  {
+    title: "Active Member",
+    organization: "KIET MUN Society",
+    duration: "2023 – Present",
+    points: [
+      "Participating in MUN conferences, developing communication and problem-solving skills.",
     ],
   },
 ];
+
+// ─── GitHub Stats (static reference — real data via GitHub API img embeds) ──
+export const githubStats = {
+  username: "Shivu384",
+  totalCommits: "500+",
+  publicRepos: "15+",
+  leetcodeSolved: "300+",
+  codechefSolved: "100+",
+  longestStreak: "21 days",
+  currentStreak: "Active",
+};
 
 export {
   services,
